@@ -1,10 +1,5 @@
 import React from 'react';
-import { View } from 'react-native';
+import Map from './components/Map'
 
-// import { Container } from './styles';
-
-const App = () => {
-  return <View />;
-}
-
+const App = () => <Map />
 export default App;
