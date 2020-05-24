@@ -65,3 +65,4 @@ web-build/
 # Dev 
 *.code-workspace
 yarn.lock
+package-lock.json
