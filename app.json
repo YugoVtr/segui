@@ -1,0 +1,17 @@
+{
+  "name": "segui",
+  "displayName": "segui",
+  "expo": {
+    "name": "segui",
+    "slug": "segui",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
