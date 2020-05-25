@@ -1,5 +1,10 @@
-import React from 'react';
+import { createAppContainer, createSwitchNavigator } from 'react-navigation';
 import Map from './components/Map'
+import Login from './components/Login'
 
-const App = () => <Map />
-export default App;
+export default createAppContainer(
+  createSwitchNavigator({
+    Login,
+    Map
+  })
+);

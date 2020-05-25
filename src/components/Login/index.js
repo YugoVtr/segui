@@ -2,7 +2,10 @@ import React, { Fragment } from 'react';
 import { Text, View, Image, TextInput, TouchableOpacity, ImageBackground } from 'react-native';
 import Estilo from './Estilo.js';
 
-const Login = () =>{
+export default function Login({ navigation }) {
+    async function handleSubmit() {   
+        navigation.navigate('Map');
+    }
     return (
         <Fragment>
         <View>
@@ -27,7 +30,7 @@ const Login = () =>{
                     secureTextEntry={true}
                     placeholder="senha"
                 />
-                <TouchableOpacity style={Estilo.botao}>
+                <TouchableOpacity onPress={handleSubmit} style={Estilo.botao}>
                     <Text style={Estilo.texto}>login</Text>
                 </TouchableOpacity>
             </View>
@@ -35,5 +38,3 @@ const Login = () =>{
   </Fragment>
     )
 }
-
-export default Login;
